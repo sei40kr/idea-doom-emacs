@@ -5,7 +5,7 @@ Doom Emacs key bindings in IdeaVim.
 ## Install
 
 ```sh
-ln -fs /path/to/idea-doom-emacs/.ideavimrc ~/.ideavimrc
+ln -fs /path/to/idea-doom-emacs/ideavimrc ~/.ideavimrc
 ```
 
 ## Plugins

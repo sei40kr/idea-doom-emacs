@@ -40,17 +40,19 @@ nnoremap zm :<C-u>action CollapseAllRegions<CR>
 " Open all folds
 nnoremap zr :<C-u>action ExpandAllRegions<CR>
 
-" Expand region
-noremap <C-S-=> :<C-u>action EditorSelectWord<CR>
-" Contract region
-noremap <C-=> :<C-u>action EditorUnSelectWord<CR>
-
 " Insert newline above
 nnoremap [<Space> O<Esc>j
 vnoremap [<Space> <Esc>O<Esc>j
 " Insert newline below
 nnoremap ]<Space> o<Esc>k
 vnoremap ]<Space> <Esc>o<Esc>k
+
+
+"
+" expand-region
+noremap <C-S-=> :<C-u>action EditorSelectWord<CR>
+vnoremap <C-S-=> :<C-u>action EditorSelectWord<CR>
+vnoremap <C-=> :<C-u>action EditorUnSelectWord<CR>
 
 
 "

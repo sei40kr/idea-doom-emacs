@@ -90,9 +90,9 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +insert
 
-| Key binding | Description             |
-|:------------|:------------------------|
-| `SPC i s`   | Snippet (Live Template) |
+| Key binding                            | Description             |
+|:---------------------------------------|:------------------------|
+| `SPC i s` (`M-SPC i s` in insert mode) | Snippet (Live Template) |
 
 ### +open
 

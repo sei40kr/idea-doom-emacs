@@ -131,6 +131,15 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC w w`            | `C-w w`     |
 | `SPC w W`            | `C-w W`     |
 
+### expand-region
+
+You need to source `expand-region.vim` to enable these key bindings:
+
+| Key binding | Description                                       |
+|:------------|:--------------------------------------------------|
+| `C-+`       | Increase selected region by semantic units        |
+| `C-=`       | Contract the selected region to its previous size |
+
 ### Misc
 
 | Key binding | Description                          |

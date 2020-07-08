@@ -4,8 +4,12 @@ Doom Emacs key bindings in IdeaVim.
 
 ## Install
 
-```sh
-ln -fs /path/to/idea-doom-emacs/ideavimrc ~/.ideavimrc
+```vim
+source /path/to/idea-doom-emacs/ideavimrc
+" If you want expand-region (Extend/Shrink Selection) key bindings
+source /path/to/idea-doom-emacs/expand-region.vim
+" If you want camel case movement and editing
+source /path/to/idea-doom-emacs/subword-mode.vim
 ```
 
 ## Plugins

@@ -49,26 +49,6 @@ vnoremap ]<Space> <Esc>o<Esc>k
 
 
 "
-" expand-region
-noremap <C-S-=> :<C-u>action EditorSelectWord<CR>
-vnoremap <C-S-=> :<C-u>action EditorSelectWord<CR>
-vnoremap <C-=> :<C-u>action EditorUnSelectWord<CR>
-
-
-"
-" subword-mode: Subword movement and editing
-
-:nnoremap w [w
-:nnoremap e ]w
-:nnoremap b [b
-:nnoremap ge ]b
-:vnoremap w [w
-:vnoremap e ]w
-:vnoremap b [b
-:vnoremap ge ]b
-
-
-"
 " +buffer
 
 " Switch workspace buffer

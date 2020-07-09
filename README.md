@@ -100,6 +100,17 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 |:------------|:-----------------------------|
 | `SPC o P`   | Find file in project sidebar |
 
+### +project
+
+| Key binding | Description              |
+|:------------|:-------------------------|
+| `SPC p !`   | Run cmd in project root  |
+| `SPC p i`   | Invalidate project cache |
+| `SPC p p`   | Switch projects          |
+| `SPC p R`   | Run project              |
+| `SPC p t`   | List project todos       |
+| `SPC p z`   | List project tasks       |
+
 ### +toggle
 
 | Key binding | Description                      |

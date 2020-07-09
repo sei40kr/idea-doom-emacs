@@ -148,17 +148,17 @@ noremap <Leader>gS :<C-u>action Git.Add<CR>
 
 " +create
 " Pull request
-noremap <Leader>gcp :<C-u>Github.Create.Pull.Reqeust<CR>
+noremap <Leader>gcp :<C-u>action Github.Create.Pull.Request<CR>
 
 " +list
 " List pull requests
-noremap <Leader>glp :<C-u>Github.View.Pull.Reqeust<CR>
+noremap <Leader>glp :<C-u>action Github.View.Pull.Request<CR>
 
 " +open
 " Browse file or region
 noremap <Leader>goo :<C-u>action Github.Open.In.Browser<CR>
 " Browse a pull request
-noremap <Leader>gop :<C-u>com.github.shiraji.findpullrequest.action.FindPullRequestAction
+noremap <Leader>gop :<C-u>action com.github.shiraji.findpullrequest.action.FindPullRequestAction<CR>
 
 nnoremap [d :<C-u>action VcsShowPrevChangeMarker<CR>
 nnoremap ]d :<C-u>action VcsShowNextChangeMarker<CR>

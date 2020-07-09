@@ -142,6 +142,28 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC w w`            | `C-w w`     |
 | `SPC w W`            | `C-w W`     |
 
+### easymotion
+
+You need [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump) &
+[IdeaVim-EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
+installed to enable these key bindings:
+
+| Key binding   | Description              |
+|:--------------|:-------------------------|
+| `SPC g s b`   | `<Plug>(easymotion-bl)`  |
+| `SPC g s e`   | `<Plug>(easymotion-el)`  |
+| `SPC g s f`   | `<Plug>(easymotion-f)`   |
+| `SPC g s F`   | `<Plug>(easymotion-F)`   |
+| `SPC g s j`   | `<Plug>(easymotion-j)`   |
+| `SPC g s k`   | `<Plug>(easymotion-k)`   |
+| `SPC g s n`   | `<Plug>(easymotion-n)`   |
+| `SPC g s N`   | `<Plug>(easymotion-N)`   |
+| `SPC g s s`   | `<Plug>(easymotion-s2)`  |
+| `SPC g s t`   | `<Plug>(easymotion-t)`   |
+| `SPC g s T`   | `<Plug>(easymotion-T)`   |
+| `SPC g s w`   | `<Plug>(easymotion-wl)`  |
+| `SPC g s g e` | `<Plug>(easymotion-gel)` |
+
 ### expand-region
 
 You need to source `expand-region.vim` to enable these key bindings:

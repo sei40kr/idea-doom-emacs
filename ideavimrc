@@ -80,7 +80,7 @@ noremap <Leader>cc :<C-u>action CompileDirty<CR>
 " Jump to definition
 noremap <Leader>cd gd
 " Format buffer/region
-noremap <Leader>cf :<C-u>action ReformatCode<CR>
+nnoremap <Leader>cf :<C-u>action ReformatCode<CR>
 " Find implementations
 noremap <Leader>ci :<C-u>action GotoImplementation<CR>
 " Jump to symbol in current workspace

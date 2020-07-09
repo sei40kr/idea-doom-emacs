@@ -40,7 +40,7 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC c a`   | Execute code action (Show Intention Actions) |
 | `SPC c c`   | Compile                                      |
 | `SPC c d`   | Jump to definition                           |
-| `SPC c f`   | Format buffer/region definition              |
+| `SPC c f`   | Format buffer/region                         |
 | `SPC c i`   | Find implementations                         |
 | `SPC c k`   | Jump to documentation                        |
 | `SPC c o`   | Organize imports                             |

@@ -16,8 +16,6 @@ set smartcase
 set surround
 set wrapscan
 
-" Resume last search
-noremap <Leader>' :<C-u>action FindInPath<CR>
 " Find file
 noremap <Leader>. :<C-u>action SearchEverywhere<CR>
 " Jump to bookmark

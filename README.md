@@ -124,9 +124,9 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +search
 
-| Key binding | Description    |
-|:------------|:---------------|
-| `SPC s p`   | Search project |
+| Key binding        | Description    |
+|:-------------------|:---------------|
+| `SPC /`, `SPC s p` | Search project |
 
 ### +window
 

@@ -55,7 +55,8 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC f c`   | Open project editorconfig |
 | `SPC f r`   | Recent files              |
 | `SPC f s`   | Save file                 |
-| `SPC f R`   | Rename file               |
+| `SPC f R`   | Rename/move file          |
+| `SPC f y`   | Yank (copy) filename      |
 
 ### +git
 
@@ -90,9 +91,12 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +insert
 
-| Key binding                            | Description             |
-|:---------------------------------------|:------------------------|
-| `SPC i s` (`M-SPC i s` in insert mode) | Snippet (Live Template) |
+| Key binding                            | Description                    |
+|:---------------------------------------|:-------------------------------|
+| `SPC i e` (`M-SPC i e` in insert mode) | Insert emoji (or unicode)      |
+| `SPC i s` (`M-SPC i s` in insert mode) | Insert snippet (Live Template) |
+| `SPC i u` (`M-SPC i u` in insert mode) | Insert unicode (or emoji)      |
+| `SPC i y` (`M-SPC i y` in insert mode) | Insert from clipboard          |
 
 ### +open
 
@@ -141,6 +145,10 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC w v`            | `C-w v`     |
 | `SPC w w`            | `C-w w`     |
 | `SPC w W`            | `C-w W`     |
+
+| Key binding | Description               |
+|:------------|:--------------------------|
+| `SPC w m`   | Maximize window (unsplit) |
 
 ### easymotion
 

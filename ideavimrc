@@ -122,8 +122,10 @@ noremap <Leader>ff :<C-u>action SearchEverywhere<CR>
 noremap <Leader>fr :<C-u>action RecentFiles<CR>
 " Save file
 noremap <Leader>fs :<C-u>w<CR>
-" Rename file
-noremap <Leader>fR :<C-u>action RenameFile<CR>
+" Yank (copy) filename
+noremap <Leader>fy :<C-u>action CopyAbsolutePath<CR>
+" Rename/move file
+noremap <Leader>fR :<C-u>action RefactoringMenu<CR>
 
 
 "
@@ -172,8 +174,18 @@ noremap <Leader>he :action ActivateEventLogToolWindow<CR>
 "
 " +insert
 
+" Insert emoji (or unicode)
+nnoremap <Leader>ie :<C-u>action EmojiAndSymbols<CR>
+inoremap <A-Space>ie <Esc>:<C-u>action EmojiAndSymbols<CR>a
+" Insert snippet (Live Template)
 nnoremap <Leader>is :<C-u>action InsertLiveTemplate<CR>
 inoremap <A-Space>is <Esc>:<C-u>action InsertLiveTemplate<CR>a
+" Insert unicode (or emoji)
+nnoremap <Leader>iu :<C-u>action EmojiAndSymbols<CR>
+inoremap <A-Space>iu <Esc>:<C-u>action EmojiAndSymbols<CR>a
+" Insert from clipboard
+nnoremap <Leader>iy :<C-u>action PasteMultiple<CR>
+inoremap <A-Space>iy <Esc>:<C-u>action PasteMultiple<CR>a
 
 
 "
@@ -235,6 +247,8 @@ noremap <Leader>ws <C-w>s
 noremap <Leader>wv <C-w>v
 noremap <Leader>ww <C-w>w
 noremap <Leader>wW <C-w>W
+" Maximize window
+noremap <Leader>wm :<C-u>action Unsplit<CR>
 
 
 "

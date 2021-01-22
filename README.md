@@ -190,6 +190,16 @@ You need to source `expand-region.vim` to enable these key bindings:
 | `SPC [`     | Insert blank line above current line |
 | `SPC ]`     | Insert blank line below current line |
 
+## Tips
+
+### Reformat Code on Save
+
+Add the following into your `.ideavimrc`:
+
+```vim
+nnoremap <Leader>fs :<C-u>action ReformatCode<CR>:<C-u>w<CR>
+```
+
 ## Similar Projects
 
 - [intellimacs](https://github.com/MarcoIeni/intellimacs) - Spacemacs' like key bindings for IntelliJ platform

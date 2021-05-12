@@ -279,6 +279,9 @@ map gsT <Plug>(easymotion-T)
 map gsw <Plug>(easymotion-wl)
 map gsge <Plug>(easymotion-gel)
 
+" highlightedyank
+set highlightedyank
+
 " NERDTree
 let g:NERDTreeMapActivateNode = 'l'
 let g:NERDTreeMapPreview = '<Nop>'

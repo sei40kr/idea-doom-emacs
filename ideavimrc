@@ -16,6 +16,7 @@ set wrapscan
 " IdeaVim only
 set ideajoin=true
 set idearefactormode=visual
+set ideavimsupport=
 
 " Search project
 map <Leader>/ <Action>(FindInPath)

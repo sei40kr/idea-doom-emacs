@@ -18,17 +18,17 @@ set ideajoin=true
 set idearefactormode=visual
 
 " Search project
-noremap <Leader>/ :<C-u>action FindInPath<CR>
+map <Leader>/ <Action>(FindInPath)
 " Find file
-noremap <Leader>. :<C-u>action SearchEverywhere<CR>
+map <Leader>. <Action>(SearchEverywhere)
 " Jump to bookmark
-noremap <Leader><CR> :<C-u>action Bookmarks<CR>
+map <Leader><CR> <Action>(Bookmarks)
 " Switch buffer
-noremap <Leader>\< :<C-u>action Switcher<CR>
+map <Leader>\< <Action>(Switcher)
 " Switch to last buffer
-noremap <Leader>` :<C-u>action GoToLastTab<CR>
+map <Leader>` <Action>(GoToLastTab)
 " Toggle last popup
-noremap <Leader>~ :<C-u>action JumpToLastWindow<CR>
+map <Leader>~ <Action>(JumpToLastWindow)
 
 " doom-escape-hook
 nnoremap <Esc> :<C-u>nohl<CR>:<C-u>action HideAllWindows<CR><Esc>
@@ -36,9 +36,9 @@ nnoremap <Esc> :<C-u>nohl<CR>:<C-u>action HideAllWindows<CR><Esc>
 imap jk <Esc>
 
 " Close all folds
-nnoremap zm :<C-u>action CollapseAllRegions<CR>
+nmap zm <Action>(CollapseAllRegions)
 " Open all folds
-nnoremap zr :<C-u>action ExpandAllRegions<CR>
+nmap zr <Action>(ExpandAllRegions)
 
 " Insert newline above
 nnoremap [<Space> O<Esc>j
@@ -52,19 +52,19 @@ vnoremap ]<Space> <Esc>o<Esc>k
 " +buffer
 
 " Switch workspace buffer
-noremap <leader>bb :<C-u>action RecentFiles<CR>
+map <leader>bb <Action>(RecentFiles)
 " Kill buffer
-noremap <Leader>bd :<C-u>action CloseContent<CR>
+map <Leader>bd <Action>(CloseContent)
 " Kill buffer
-noremap <Leader>bk :<C-u>action CloseContent<CR>
+map <Leader>bk <Action>(CloseContent)
 " Save buffer
 noremap <Leader>bs :<C-u>w<CR>
 " Kill all buffers
-noremap <Leader>bK :<C-u>action CloseAllEditors<CR>
+map <Leader>bK <Action>(CloseAllEditors)
 " New empty buffer
-noremap <Leader>bN :<C-u>action NewScratchBuffer<CR>
+map <Leader>bN <Action>(NewScratchBuffer)
 " Kill other buffers
-noremap <Leader>bO :<C-u>action CloseAllEditorsButActive<CR>
+map <Leader>bO <Action>(CloseAllEditorsButActive)
 " Save all buffers
 noremap <Leader>bS :<C-u>wa<CR>
 
@@ -73,120 +73,120 @@ noremap <Leader>bS :<C-u>wa<CR>
 " +code
 
 " Jump to references
-noremap <Leader>cD :<C-u>action ShowUsages<CR>
+map <Leader>cD <Action>(ShowUsages)
 " Execute code action
-noremap <Leader>ca :<C-u>action ShowIntentionActions<CR>
+map <Leader>ca <Action>(ShowIntentionActions)
 " Compile
-noremap <Leader>cc :<C-u>action CompileDirty<CR>
+map <Leader>cc <Action>(CompileDirty)
 " Jump to definition
 noremap <Leader>cd gd
 " Format buffer/region
-nnoremap <Leader>cf :<C-u>action ReformatCode<CR>
+nmap <Leader>cf <Action>(ReformatCode)
 " Find implementations
-noremap <Leader>ci :<C-u>action GotoImplementation<CR>
+map <Leader>ci <Action>(GotoImplementation)
 " Jump to symbol in current workspace
-noremap <Leader>cj :<C-u>action SearchEverywhere<CR>
+map <Leader>cj <Action>(SearchEverywhere)
 " Jump to documentation
-noremap <Leader>ck :<C-u>action QuickJavaDoc<CR>
+map <Leader>ck <Action>(QuickJavaDoc)
 " Organize imports
-noremap <Leader>co :<C-u>action OptimizeImports<CR>
+map <Leader>co <Action>(OptimizeImports)
 " Rename
-noremap <Leader>cr :<C-u>action RenameElement<CR>
+map <Leader>cr <Action>(RenameElement)
 " Find type definition
-noremap <Leader>ct :<C-u>action GotoTypeDeclaration<CR>
+map <Leader>ct <Action>(GotoTypeDeclaration)
 " Recompile
-noremap <Leader>cC :<C-u>action Compile<CR>
+map <Leader>cC <Action>(Compile)
 
 " Show error description
-noremap <C-c>!h :<C-u>action ShowErrorDescription<CR>
+map <C-c>!h <Action>(ShowErrorDescription)
 " Go to previous error
-nnoremap [e :<C-u>action GotoPreviousError<CR>
-nnoremap <C-c>!p :<C-u>action GotoPreviousError<CR>
+nmap [e <Action>(GotoPreviousError)
+nmap <C-c>!p <Action>(GotoPreviousError)
 " Go to next error
-nnoremap ]e :<C-u>action GotoNextError<CR>
-nnoremap <C-c>!n :<C-u>action GotoNextError<CR>
+nmap ]e <Action>(GotoNextError)
+nmap <C-c>!n <Action>(GotoNextError)
 
 " Go to previous method
-nnoremap [[ :<C-u>action MethodUp<CR>
+nmap [[ <Action>(MethodUp)
 " Go to next method
-nnoremap ]] :<C-u>action MethodDown<CR>
+nmap ]] <Action>(MethodDown)
 
 
 "
 " +file
 
 " Open project editorconfig
-noremap <Leader>fc :<C-u>action NewEditorConfigFile<CR>
+map <Leader>fc <Action>(NewEditorConfigFile)
 " Find file
-noremap <Leader>ff :<C-u>action SearchEverywhere<CR>
+map <Leader>ff <Action>(SearchEverywhere)
 " Recent files
-noremap <Leader>fr :<C-u>action RecentFiles<CR>
+map <Leader>fr <Action>(RecentFiles)
 " Save file
 noremap <Leader>fs :<C-u>w<CR>
 " Yank (copy) filename
-noremap <Leader>fy :<C-u>action CopyAbsolutePath<CR>
+map <Leader>fy <Action>(CopyAbsolutePath)
 " Rename/move file
-noremap <Leader>fR :<C-u>action RefactoringMenu<CR>
+map <Leader>fR <Action>(RefactoringMenu)
 
 
 "
 " +git
 
 " Jump to previous hunk
-nnoremap <Leader>g[ :<C-u>action VcsShowPrevChangeMarker<CR>
+nmap <Leader>g[ <Action>(VcsShowPrevChangeMarker)
 " Jump to next hunk
-nnoremap <Leader>g] :<C-u>action VcsShowNextChangeMarker<CR>
+nmap <Leader>g] <Action>(VcsShowNextChangeMarker)
 " Switch branch
-noremap <Leader>gb :<C-u>action Git.Branches<CR>
-noremap <Leader>gg :<C-u>action Git.Menu<CR>
+map <Leader>gb <Action>(Git.Branches)
+map <Leader>gg <Action>(Git.Menu)
 " Revert hunk
-noremap <Leader>gr :<C-u>action Vcs.RollbackChangedLines<CR>
+map <Leader>gr <Action>(Vcs.RollbackChangedLines)
 " Blame
-noremap <Leader>gB :<C-u>action Annotate<CR>
+map <Leader>gB <Action>(Annotate)
 " Fetch
-noremap <Leader>gF :<C-u>action Git.Fetch<CR>
+map <Leader>gF <Action>(Git.Fetch)
 " Git stage file
-noremap <Leader>gS :<C-u>action Git.Add<CR>
+map <Leader>gS <Action>(Git.Add)
 
 " +create
 " Pull request
-noremap <Leader>gcp :<C-u>action Github.Create.Pull.Request<CR>
+map <Leader>gcp <Action>(Github.Create.Pull.Request)
 
 " +list
 " List pull requests
-noremap <Leader>glp :<C-u>action Github.View.Pull.Request<CR>
+map <Leader>glp <Action>(Github.View.Pull.Request)
 
 " +open
 " Browse file or region
-noremap <Leader>goo :<C-u>action Github.Open.In.Browser<CR>
+map <Leader>goo <Action>(Github.Open.In.Browser)
 " Browse a pull request
-noremap <Leader>gop :<C-u>action com.github.shiraji.findpullrequest.action.FindPullRequestAction<CR>
+map <Leader>gop <Action>(com.github.shiraji.findpullrequest.action.FindPullRequestAction)
 
-nnoremap [d :<C-u>action VcsShowPrevChangeMarker<CR>
-nnoremap ]d :<C-u>action VcsShowNextChangeMarker<CR>
+nmap [d <Action>(VcsShowPrevChangeMarker)
+nmap ]d <Action>(VcsShowNextChangeMarker)
 
 
 "
 " +help
 
-noremap <Leader>he :action ActivateEventLogToolWindow<CR>
+map <Leader>he <Action>(ActivateEventLogToolWindow)
 
 
 "
 " +insert
 
 " Insert emoji (or unicode)
-nnoremap <Leader>ie :<C-u>action EmojiAndSymbols<CR>
-inoremap <A-Space>ie <Esc>:<C-u>action EmojiAndSymbols<CR>a
+nmap <Leader>ie <Action>(EmojiAndSymbols)
+imap <A-Space>ie <Action>(EmojiAndSymbols)
 " Insert snippet (Live Template)
-nnoremap <Leader>is :<C-u>action InsertLiveTemplate<CR>
-inoremap <A-Space>is <Esc>:<C-u>action InsertLiveTemplate<CR>a
+nmap <Leader>is <Action>(InsertLiveTemplate)
+imap <A-Space>is <Action>(InsertLiveTemplate)
 " Insert unicode (or emoji)
-nnoremap <Leader>iu :<C-u>action EmojiAndSymbols<CR>
-inoremap <A-Space>iu <Esc>:<C-u>action EmojiAndSymbols<CR>a
+nmap <Leader>iu <Action>(EmojiAndSymbols)
+imap <A-Space>iu <Action>(EmojiAndSymbols)
 " Insert from clipboard
-nnoremap <Leader>iy :<C-u>action PasteMultiple<CR>
-inoremap <A-Space>iy <Esc>:<C-u>action PasteMultiple<CR>a
+nmap <Leader>iy <Action>(PasteMultiple)
+imap <A-Space>iy <Action>(PasteMultiple)
 
 
 "
@@ -199,41 +199,41 @@ noremap <Leader>oP :<C-u>NERDTreeFind<CR>
 " +project
 
 " Run cmd in project root
-noremap <Leader>p! :<C-u>action RunAnything<CR>
+map <Leader>p! <Action>(RunAnything)
 " Invalidate project cache
-noremap <Leader>pi :<C-u>action InvalidateCaches<CR>
+map <Leader>pi <Action>(InvalidateCaches)
 " Switch projects
-noremap <Leader>pp :<C-u>action ManageRecentProjects<CR>
+map <Leader>pp <Action>(ManageRecentProjects)
 " List project todos
-noremap <Leader>pt :<C-u>action ActivateTODOToolWindow<CR>
+map <Leader>pt <Action>(ActivateTODOToolWindow)
 " List project tasks
-noremap <Leader>pz :<C-u>action RunAnything<CR>
+map <Leader>pz <Action>(RunAnything)
 " Run project
-noremap <Leader>pR :<C-u>action Run<CR>
+map <Leader>pR <Action>(Run)
 
 
 "
 " +toggle
 
 " Big mode (Presentation Mode)
-noremap <Leader>tb :<C-u>action TogglePresentationMode<CR>
+map <Leader>tb <Action>(TogglePresentationMode)
 " Line numbers
-noremap <Leader>tl :<C-u>action EditorToggleShowLineNumbers<CR>
+map <Leader>tl <Action>(EditorToggleShowLineNumbers)
 " Read-only mode
-noremap <Leader>tr :<C-u>action ToggleReadOnlyAttribute<CR>
+map <Leader>tr <Action>(ToggleReadOnlyAttribute)
 " Soft line wrapping
-noremap <Leader>tw :<C-u>action EditorToggleUseSoftWraps<CR>
+map <Leader>tw <Action>(EditorToggleUseSoftWraps)
 " Zen mode (Distraction Free Mode)
-noremap <Leader>tz :<C-u>action ToggleDistractionFreeMode<CR>
+map <Leader>tz <Action>(ToggleDistractionFreeMode)
 " Frame fullscreen
-noremap <Leader>tF :<C-u>action ToggleFullScreen<CR>
+map <Leader>tF <Action>(ToggleFullScreen)
 
 
 "
 " +search
 
 " Search project
-noremap <Leader>sp :<C-u>action FindInPath<CR>
+map <Leader>sp <Action>(FindInPath)
 
 
 "
@@ -250,7 +250,7 @@ noremap <Leader>wv <C-w>v
 noremap <Leader>ww <C-w>w
 noremap <Leader>wW <C-w>W
 " Maximize window
-noremap <Leader>wm :<C-u>action Unsplit<CR>
+noremap <Leader>wm <Action>(Unsplit)
 
 
 "

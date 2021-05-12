@@ -1,3 +1,3 @@
-noremap <C-S-=> :<C-u>action EditorSelectWord<CR>
-vnoremap <C-S-=> :<C-u>action EditorSelectWord<CR>
-vnoremap <C-=> :<C-u>action EditorUnSelectWord<CR>
+map <C-S-=> <Action>(EditorSelectWord)
+vmap <C-S-=> <Action>(EditorSelectWord)
+vmap <C-=> <Action>(EditorUnSelectWord)

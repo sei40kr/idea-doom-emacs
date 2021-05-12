@@ -100,9 +100,10 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +open
 
-| Key binding | Description                  |
-|:------------|:-----------------------------|
-| `SPC o P`   | Find file in project sidebar |
+| Key binding | Description               |
+| :---------- | :------------------------ |
+| `SPC o p`   | Project View              |
+| `SPC o P`   | Find file in Project View |
 
 ### +project
 

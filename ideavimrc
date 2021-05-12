@@ -5,8 +5,6 @@ let mapleader = " "
 set clipboard+=unnamed
 set commentary
 set history
-set ideajoin=true
-set idearefactormode=visual
 set ignorecase
 set matchpairs
 set multiple-cursors
@@ -15,6 +13,9 @@ set relativenumber
 set smartcase
 set surround
 set wrapscan
+" IdeaVim only
+set ideajoin=true
+set idearefactormode=visual
 
 " Search project
 noremap <Leader>/ :<C-u>action FindInPath<CR>
@@ -190,7 +191,8 @@ inoremap <A-Space>iy <Esc>:<C-u>action PasteMultiple<CR>a
 
 "
 " +open
-noremap <Leader>oP :<C-u>action SelectInProjectView<CR>
+noremap <Leader>op :<C-u>NERDTreeToggle<CR>
+noremap <Leader>oP :<C-u>NERDTreeFind<CR>
 
 
 "
@@ -252,7 +254,7 @@ noremap <Leader>wm :<C-u>action Unsplit<CR>
 
 
 "
-" Others
+" Emulated plugins
 
 " easymotion
 let g:EasyMotion_do_mapping = 0
@@ -271,3 +273,28 @@ map gst <Plug>(easymotion-t)
 map gsT <Plug>(easymotion-T)
 map gsw <Plug>(easymotion-wl)
 map gsge <Plug>(easymotion-gel)
+
+" NERDTree
+let g:NERDTreeMapActivateNode = 'l'
+let g:NERDTreeMapPreview = '<Nop>'
+let g:NERDTreeMapOpenInTab = 'oo'
+let g:NERDTreeMapOpenInTabSilent = '<Nop>'
+let g:NERDTreeMapOpenSplit = 'oh'
+let g:NERDTreeMapPreviewSplit = '<Nop>'
+let g:NERDTreeMapOpenVSplit = 'ov'
+let g:NERDTreeMapPreviewVSplit = '<Nop>'
+let g:NERDTreeMapOpenRecursively = '<Nop>'
+let g:NERDTreeMapCloseDir = 'h'
+let g:NERDTreeMapCloseChildren = '<Nop>'
+let g:NERDTreeMapJumpRoot = '<Nop>'
+let g:NERDTreeMapJumpParent = 'K'
+let g:NERDTreeMapJumpFirstChild = '<Nop>'
+let g:NERDTreeMapJumpLastChild = '<Nop>'
+let g:NERDTreeMapJumpNextSibling = 'L'
+let g:NERDTreeMapJumpPrevSibling = 'H'
+let g:NERDTreeMapRefresh = '<Nop>'
+let g:NERDTreeMapRefreshRoot = 'gr'
+let g:NERDTreeMapMenu = '<Nop>'
+" let g:NERDTreeMapQuit = 'q'
+let g:NERDTreeMapToggleZoom = '<Nop>'
+set NERDTree

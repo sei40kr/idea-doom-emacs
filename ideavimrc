@@ -295,7 +295,7 @@ let g:WhichKeyDesc_help_leader = '<leader>h +help'
 map <Leader>he <Action>(ActivateEventLogToolWindow)
 let g:WhichKeyDesc_event_log = '<leader>he Show Event Log'
 " Change theme
-map <Leader>ht <Action>(ChangeColorScheme)
+map <Leader>ht <Action>(ChangeLaf)
 let g:WhichKeyDesc_change_theme = '<leader>ht Change theme'
 
 

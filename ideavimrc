@@ -212,6 +212,15 @@ let g:WhichKeyDesc_rename_move_file = '<leader>fR Rename/move file'
 " +git
 
 let g:WhichKeyDesc_git_leader = '<leader>g +git'
+" GitHub menu
+map <Leader>g' <Action>(GitHub.MainMenu)
+let g:WhichKeyDesc_github_menu = "<leader>g' GitHub menu"
+" Git file actions
+map <Leader>g. <Action>(Git.FileActions)
+let g:WhichKeyDesc_git_file_actions = '<leader>g. Git file actions'
+" Git menu
+map <Leader>g/ <Action>(Git.Menu)
+let g:WhichKeyDesc_git_menu = '<leader>g/ Git menu'
 " Jump to previous hunk
 nmap <Leader>g[ <Action>(VcsShowPrevChangeMarker)
 let g:WhichKeyDesc_jump_to_prev_hunk1 = '<leader>g[ Jump to previous hunk'
@@ -225,15 +234,21 @@ let g:WhichKeyDesc_jump_to_next_hunk2 = ']d Jump to next hunk'
 " Switch branch
 map <Leader>gb <Action>(Git.Branches)
 let g:WhichKeyDesc_switch_branch = '<leader>gb Switch branch'
-" Git menu
-map <Leader>gg <Action>(Git.Menu)
-let g:WhichKeyDesc_git_menu = '<leader>gg Git menu'
 " Revert hunk
 map <Leader>gr <Action>(Vcs.RollbackChangedLines)
 let g:WhichKeyDesc_revert_hunk = '<leader>gr Revert hunk'
+" Status
+map <Leader>gs <Action>(Vcs.Show.Shelf)
+let g:WhichKeyDesc_status = '<leader>gs Status'
+" Git time machine
+map <Leader>gt <Action>(Vcs.ShowTabbedFileHistory)
+let g:WhichKeyDesc_git_time_machine = '<leader>gt Time machine'
 " Blame
 map <Leader>gB <Action>(Annotate)
 let g:WhichKeyDesc_blame = '<leader>gB Blame'
+" Clone
+map <Leader>gC <Action>(Vcs.VcsClone)
+let g:WhichKeyDesc_clone1 = '<leader>gC Clone'
 " Fetch
 map <Leader>gF <Action>(Git.Fetch)
 let g:WhichKeyDesc_fetch = '<leader>gF Fetch'
@@ -243,9 +258,18 @@ let g:WhichKeyDesc_git_stage_file = '<leader>gS Git stage file'
 
 " +create
 let g:WhichKeyDesc_git_create_leader = '<leader>gc +create'
+" Branch
+map <Leader>gcb <Action>(Git.CreateNewBranch)
+let g:WhichKeyDesc_create_branch = '<leader>gcb Branch'
 " Pull request
 map <Leader>gcp <Action>(Github.Create.Pull.Request)
 let g:WhichKeyDesc_create_pr = '<leader>gcp Pull request'
+" Initialize repo
+map <Leader>gcr <Action>(Git.Init)
+let g:WhichKeyDesc_init_repo = '<leader>gcr Initialize repo'
+" Clone repo
+map <Leader>gcR <Action>(Vcs.VcsClone)
+let g:WhichKeyDesc_clone2 = '<leader>gcR Clone repo'
 
 " +list
 let g:WhichKeyDesc_list_leader = '<leader>gl +list'

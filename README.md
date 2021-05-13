@@ -62,19 +62,28 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 | Key binding      | Description           |
 |:-----------------|:----------------------|
+| `SPC g '`        | GitHub menu           |
+| `SPC g .`        | Git file actions      |
+| `SPC g /`        | Git menu              |
 | `SPC g [`, `[ d` | Jump to previous hunk |
 | `SPC g ]`, `] d` | Jump to next hunk     |
 | `SPC g b`        | Switch branch         |
 | `SPC g r`        | Revert hunk           |
+| `SPC g s`        | Status                |
+| `SPC g t`        | Time machine          |
 | `SPC g B`        | Blame                 |
+| `SPC g C`        | Clone                 |
 | `SPC g F`        | Fetch                 |
 | `SPC g S`        | Git stage file        |
 
 #### +create
 
-| Key binding | Description  |
-|:------------|:-------------|
-| `SPC g c p` | Pull request |
+| Key binding | Description     |
+|:------------|:----------------|
+| `SPC g c b` | Branch          |
+| `SPC g c p` | Pull request    |
+| `SPC g c r` | Initialize repo |
+| `SPC g c R` | Clone repo      |
 
 #### +list
 

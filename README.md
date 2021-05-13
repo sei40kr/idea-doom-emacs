@@ -198,6 +198,22 @@ You need to source `expand-region.vim` to enable these key bindings:
 | `C-+`       | Increase selected region by semantic units        |
 | `C-=`       | Contract the selected region to its previous size |
 
+### In Project View
+
+| Key binding | Description        |
+|:------------|:-------------------|
+| `g r`       | Refresh            |
+| `j`         | Next line          |
+| `k`         | Previous line      |
+| `l`         | DWIM               |
+| `K`         | Go to parent       |
+| `L`         | Next neighbour     |
+| `H`         | Previous neighbour |
+| `o o`       | Open no split      |
+| `o s`       | Open vertical      |
+| `o v`       | Open horizontal    |
+| `q`         | Quit               |
+
 ### Misc
 
 | Key binding | Description                          |

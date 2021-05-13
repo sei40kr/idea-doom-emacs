@@ -2,6 +2,13 @@
 
 Doom Emacs key bindings in IdeaVim.
 
+## Prequisites
+
+- [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
+- [IdeaVim-EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
+- [Find Pull Request](https://plugins.jetbrains.com/plugin/8262-find-pull-request)
+- [Which-key](https://plugins.jetbrains.com/plugin/15976-which-key)
+
 ## Install
 
 ```vim
@@ -11,13 +18,6 @@ source /path/to/idea-doom-emacs/expand-region.vim
 " If you want camel case movement and editing
 source /path/to/idea-doom-emacs/subword-mode.vim
 ```
-
-## Plugins
-
-| Plugin                                                                                                                                            | Required by                           |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------|
-| [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump), [IdeaVim-EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion) | `g s s`                               |
-| [Find Pull Request](https://plugins.jetbrains.com/plugin/8262-find-pull-request)                                                                  | Browse a pull request ( `SPC g o p` ) |
 
 ## Key Bindings
 
@@ -172,10 +172,6 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC w m`   | Maximize window (unsplit) |
 
 ### easymotion
-
-You need [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump) &
-[IdeaVim-EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
-installed to enable these key bindings:
 
 | Key binding   | Description              |
 |:--------------|:-------------------------|

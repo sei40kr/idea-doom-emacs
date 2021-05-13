@@ -200,9 +200,9 @@ let g:WhichKeyDesc_recent_files = '<leader>fr Recent files'
 " Save file
 noremap <Leader>fs :<C-u>w<CR>
 let g:WhichKeyDesc_save_file = '<leader>fs Save file'
-" Yank (copy) filename
+" Copy filename
 map <Leader>fy <Action>(CopyAbsolutePath)
-let g:WhichKeyDesc_yank_filename = '<leader>fy Yank filename'
+let g:WhichKeyDesc_copy_filename = '<leader>fy Copy filename'
 " Rename/move file
 map <Leader>fR <Action>(RefactoringMenu)
 let g:WhichKeyDesc_rename_move_file = '<leader>fR Rename/move file'

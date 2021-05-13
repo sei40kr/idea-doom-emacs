@@ -56,7 +56,7 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC f r`   | Recent files              |
 | `SPC f s`   | Save file                 |
 | `SPC f R`   | Rename/move file          |
-| `SPC f y`   | Yank (copy) filename      |
+| `SPC f y`   | Copy filename             |
 
 ### +git
 

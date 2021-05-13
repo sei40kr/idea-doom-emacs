@@ -20,16 +20,22 @@ set ideavimsupport=
 
 " Search project
 map <Leader>/ <Action>(FindInPath)
+let g:WhichKeyDesc_search_project1 = '<leader>/ Search project'
 " Find file
 map <Leader>. <Action>(SearchEverywhere)
+let g:WhichKeyDesc_find_file1 = '<leader>. Find file'
 " Jump to bookmark
 map <Leader><CR> <Action>(Bookmarks)
+let g:WhichKeyDesc_jump_to_bookmark = '<leader>⏎ Jump to bookmark'
 " Switch buffer
 map <Leader>\< <Action>(Switcher)
+let g:WhichKeyDesc_switch_buffer = '<leader>< Switch buffer'
 " Switch to last buffer
 map <Leader>` <Action>(GoToLastTab)
+let g:WhichKeyDesc_switch_to_last_buffer = '<leader>` Switch to last buffer'
 " Toggle last popup
 map <Leader>~ <Action>(JumpToLastWindow)
+let g:WhichKeyDesc_toggle_last_popup = '<leader>~ Toggle last popup'
 
 " doom-escape-hook
 nnoremap <Esc> :<C-u>nohl<CR>:<C-u>action HideAllWindows<CR><Esc>
@@ -44,197 +50,280 @@ nmap zr <Action>(ExpandAllRegions)
 " Insert newline above
 nnoremap [<Space> O<Esc>j
 vnoremap [<Space> <Esc>O<Esc>j
+let g:WhichKeyDesc_insert_newline_above = '[<Space> Insert newline above'
 " Insert newline below
 nnoremap ]<Space> o<Esc>k
 vnoremap ]<Space> <Esc>o<Esc>k
+let g:WhichKeyDesc_insert_newline_below = ']<Space> Insert newline below'
 
 
 "
 " +buffer
 
+let g:WhichKeyDesc_buffer = '<leader>b +buffer'
 " Switch workspace buffer
 map <leader>bb <Action>(RecentFiles)
+let g:WhichKeyDesc_switch_workspace_buffer = '<leader>bb Switch workspace buffer'
 " Kill buffer
 map <Leader>bd <Action>(CloseContent)
+let g:WhichKeyDesc_kill_buffer1 = '<leader>bd Kill buffer'
 " Kill buffer
 map <Leader>bk <Action>(CloseContent)
+let g:WhichKeyDesc_kill_buffer2 = '<leader>bk Kill buffer'
 " Save buffer
 noremap <Leader>bs :<C-u>w<CR>
+let g:WhichKeyDesc_save_buffer = '<leader>bs Save buffer'
 " Kill all buffers
 map <Leader>bK <Action>(CloseAllEditors)
+let g:WhichKeyDesc_kill_all_buffers = '<leader>bK Kill all buffers'
 " New empty buffer
 map <Leader>bN <Action>(NewScratchBuffer)
+let g:WhichKeyDesc_new_empty_buffer = '<leader>bN New empty buffer'
 " Kill other buffers
 map <Leader>bO <Action>(CloseAllEditorsButActive)
+let g:WhichKeyDesc_kill_other_buffers = '<leader>bO Kill other buffers'
 " Save all buffers
 noremap <Leader>bS :<C-u>wa<CR>
+let g:WhichKeyDesc_save_all_buffers = '<leader>bS Save all buffers'
 
 
 "
 " +code
 
+let g:WhichKeyDesc_code_leader = '<leader>c +code'
 " Jump to references
 map <Leader>cD <Action>(ShowUsages)
-" Execute code action
+let g:WhichKeyDesc_jump_to_refs = '<leader>cD Jump to references'
+" Execute Intention Action
 map <Leader>ca <Action>(ShowIntentionActions)
+let g:WhichKeyDesc_exec_intention_action = '<leader>ca Execute Intention Action'
 " Compile
 map <Leader>cc <Action>(CompileDirty)
+let g:WhichKeyDesc_compile = '<leader>cc Compile'
 " Jump to definition
 noremap <Leader>cd gd
+let g:WhichKeyDesc_jump_to_def1 = 'gd Jump to definition'
+let g:WhichKeyDesc_jump_to_def2 = '<leader>cd Jump to definition'
 " Format buffer/region
 nmap <Leader>cf <Action>(ReformatCode)
+let g:WhichKeyDesc_format_buffer_region = '<leader>cf Format buffer/region'
 " Find implementations
 map <Leader>ci <Action>(GotoImplementation)
+let g:WhichKeyDesc_find_impls = '<leader>ci Find implementations'
 " Jump to symbol in current workspace
 map <Leader>cj <Action>(SearchEverywhere)
-" Jump to documentation
+let g:WhichKeyDesc_jump_to_symbol_in_current_workspace = '<leader>cj Jump to symbol in current workspace'
+" Show documentation
 map <Leader>ck <Action>(QuickJavaDoc)
+let g:WhichKeyDesc_show_doc = '<leader>ck Show documentation'
 " Organize imports
 map <Leader>co <Action>(OptimizeImports)
+let g:WhichKeyDesc_organize_imports = '<leader>co Organize imports'
 " Rename
 map <Leader>cr <Action>(RenameElement)
+let g:WhichKeyDesc_rename = '<leader>cr Rename'
 " Find type definition
 map <Leader>ct <Action>(GotoTypeDeclaration)
+let g:WhichKeyDesc_find_type_def = '<leader>ct Find type definition'
 " Recompile
 map <Leader>cC <Action>(Compile)
+let g:WhichKeyDesc_recompile = '<leader>cC Recompile'
 
 " Show error description
 map <C-c>!h <Action>(ShowErrorDescription)
 " Go to previous error
 nmap [e <Action>(GotoPreviousError)
+let g:WhichKeyDesc_go_to_prev_error1 = '[e Go to previous error'
 nmap <C-c>!p <Action>(GotoPreviousError)
 " Go to next error
 nmap ]e <Action>(GotoNextError)
+let g:WhichKeyDesc_go_to_next_error1 = ']e Go to next error'
 nmap <C-c>!n <Action>(GotoNextError)
 
 " Go to previous method
 nmap [[ <Action>(MethodUp)
+let g:WhichKeyDesc_go_to_prev_method = '[[ Go to previous method'
 " Go to next method
 nmap ]] <Action>(MethodDown)
+let g:WhichKeyDesc_go_to_next_method = ']] Go to next method'
 
 
 "
 " +file
 
+let g:WhichKeyDesc_file_leader = '<leader>f +file'
 " Open project editorconfig
 map <Leader>fc <Action>(NewEditorConfigFile)
+let g:WhichKeyDesc_open_project_editorconfig = '<leader>fc Open project editorconfig'
 " Find file
 map <Leader>ff <Action>(SearchEverywhere)
+let g:WhichKeyDesc_find_file2 = '<leader>ff Find file'
 " Recent files
 map <Leader>fr <Action>(RecentFiles)
+let g:WhichKeyDesc_recent_files = '<leader>fr Recent files'
 " Save file
 noremap <Leader>fs :<C-u>w<CR>
+let g:WhichKeyDesc_save_file = '<leader>fs Save file'
 " Yank (copy) filename
 map <Leader>fy <Action>(CopyAbsolutePath)
+let g:WhichKeyDesc_yank_filename = '<leader>fy Yank filename'
 " Rename/move file
 map <Leader>fR <Action>(RefactoringMenu)
+let g:WhichKeyDesc_rename_move_file = '<leader>fR Rename/move file'
 
 
 "
 " +git
 
+let g:WhichKeyDesc_git_leader = '<leader>g +git'
 " Jump to previous hunk
 nmap <Leader>g[ <Action>(VcsShowPrevChangeMarker)
+let g:WhichKeyDesc_jump_to_prev_hunk1 = '<leader>g[ Jump to previous hunk'
+nmap [d <Action>(VcsShowPrevChangeMarker)
+let g:WhichKeyDesc_jump_to_prev_hunk2 = '[d Jump to previous hunk'
 " Jump to next hunk
 nmap <Leader>g] <Action>(VcsShowNextChangeMarker)
+let g:WhichKeyDesc_jump_to_next_hunk1 = '<leader>g] Jump to next hunk'
+nmap ]d <Action>(VcsShowNextChangeMarker)
+let g:WhichKeyDesc_jump_to_next_hunk2 = ']d Jump to next hunk'
 " Switch branch
 map <Leader>gb <Action>(Git.Branches)
+let g:WhichKeyDesc_switch_branch = '<leader>gb Switch branch'
+" Git menu
 map <Leader>gg <Action>(Git.Menu)
+let g:WhichKeyDesc_git_menu = '<leader>gg Git menu'
 " Revert hunk
 map <Leader>gr <Action>(Vcs.RollbackChangedLines)
+let g:WhichKeyDesc_revert_hunk = '<leader>gr Revert hunk'
 " Blame
 map <Leader>gB <Action>(Annotate)
+let g:WhichKeyDesc_blame = '<leader>gB Blame'
 " Fetch
 map <Leader>gF <Action>(Git.Fetch)
+let g:WhichKeyDesc_fetch = '<leader>gF Fetch'
 " Git stage file
 map <Leader>gS <Action>(Git.Add)
+let g:WhichKeyDesc_git_stage_file = '<leader>gS Git stage file'
 
 " +create
+let g:WhichKeyDesc_git_create_leader = '<leader>gc +create'
 " Pull request
 map <Leader>gcp <Action>(Github.Create.Pull.Request)
+let g:WhichKeyDesc_create_pr = '<leader>gcp Pull request'
 
 " +list
+let g:WhichKeyDesc_list_leader = '<leader>gl +list'
 " List pull requests
 map <Leader>glp <Action>(Github.View.Pull.Request)
+let g:WhichKeyDesc_list_prs = '<leader>glp List pull requests'
 
 " +open
+let g:WhichKeyDesc_git_open_leader = '<leader>go +open'
 " Browse file or region
 map <Leader>goo <Action>(Github.Open.In.Browser)
+let g:WhichKeyDesc_browse_file_or_region = '<leader>goo Browse file or region'
 " Browse a pull request
 map <Leader>gop <Action>(com.github.shiraji.findpullrequest.action.FindPullRequestAction)
-
-nmap [d <Action>(VcsShowPrevChangeMarker)
-nmap ]d <Action>(VcsShowNextChangeMarker)
+let g:WhichKeyDesc_browse_pr = '<leader>gop Browse a pull request'
 
 
 "
 " +help
 
+let g:WhichKeyDesc_help_leader = '<leader>h +help'
+" Show Event Log
 map <Leader>he <Action>(ActivateEventLogToolWindow)
+let g:WhichKeyDesc_event_log = '<leader>he Show Event Log'
 
 
 "
 " +insert
 
-" Insert emoji (or unicode)
+let g:WhichKeyDesc_insert_leader = '<leader>i +insert'
+" Insert emoji/unicode
 nmap <Leader>ie <Action>(EmojiAndSymbols)
 imap <A-Space>ie <Action>(EmojiAndSymbols)
-" Insert snippet (Live Template)
+let g:WhichKeyDesc_insert_emoji_unicode1 = '<leader>ie Insert emoji/unicode'
+" Insert Live Template
 nmap <Leader>is <Action>(InsertLiveTemplate)
 imap <A-Space>is <Action>(InsertLiveTemplate)
-" Insert unicode (or emoji)
+let g:WhichKeyDesc_insert_live_template = '<leader>is Insert Live Template'
+" Insert emoji/unicode
 nmap <Leader>iu <Action>(EmojiAndSymbols)
 imap <A-Space>iu <Action>(EmojiAndSymbols)
+let g:WhichKeyDesc_insert_emoji_unicode2 = '<leader>iu Insert emoji/unicode'
 " Insert from clipboard
 nmap <Leader>iy <Action>(PasteMultiple)
 imap <A-Space>iy <Action>(PasteMultiple)
+let g:WhichKeyDesc_insert_from_clipboard = '<leader>iy Insert from clipboard'
 
 
 "
 " +open
+let g:WhichKeyDesc_open_leader = '<leader>o +open'
+" Toggle Project View
 noremap <Leader>op :<C-u>NERDTreeToggle<CR>
+let g:WhichKeyDesc_project_sidebar = '<leader>op Toggle Project View'
+" Find file in Project View
 noremap <Leader>oP :<C-u>NERDTreeFind<CR>
+let g:WhichKeyDesc_find_file_in_project_sidebar = '<leader>oP Find file in Project View'
 
 
 "
 " +project
 
+let g:WhichKeyDesc_project_leader = '<leader>p +project'
 " Run cmd in project root
 map <Leader>p! <Action>(RunAnything)
+let g:WhichKeyDesc_run_cmd_in_project_root = '<leader>p! Run cmd in project root'
 " Invalidate project cache
 map <Leader>pi <Action>(InvalidateCaches)
+let g:WhichKeyDesc_invalidate_project_cache = '<leader>pi Invalidate project cache'
 " Switch projects
 map <Leader>pp <Action>(ManageRecentProjects)
-" List project todos
+let g:WhichKeyDesc_switch_projects = '<leader>pp Switch projects'
+" Show TODO
 map <Leader>pt <Action>(ActivateTODOToolWindow)
+let g:WhichKeyDesc_show_todo = '<leader>pt Show TODO'
 " List project tasks
 map <Leader>pz <Action>(RunAnything)
+let g:WhichKeyDesc_list_project_tasks = '<leader>pz List project tasks'
 " Run project
 map <Leader>pR <Action>(Run)
+let g:WhichKeyDesc_run_project = '<leader>pR Run project'
 
 
 "
 " +toggle
 
-" Big mode (Presentation Mode)
+let g:WhichKeyDesc_toggle_leader = '<leader>t +toggle'
+" Presentation Mode
 map <Leader>tb <Action>(TogglePresentationMode)
+let g:WhichKeyDesc_toggle_presentation_mode = '<leader>tb Presentation Mode'
 " Line numbers
 map <Leader>tl <Action>(EditorToggleShowLineNumbers)
+let g:WhichKeyDesc_toggle_line_numbers = '<leader>tl Line numbers'
 " Read-only mode
 map <Leader>tr <Action>(ToggleReadOnlyAttribute)
+let g:WhichKeyDesc_toggle_readonly_mode = '<leader>tr Read-only mode'
 " Soft line wrapping
 map <Leader>tw <Action>(EditorToggleUseSoftWraps)
-" Zen mode (Distraction Free Mode)
+let g:WhichKeyDesc_toggle_soft_line_wrapping = '<leader>tw Soft line wrapping'
+" Distraction Free Mode
 map <Leader>tz <Action>(ToggleDistractionFreeMode)
-" Frame fullscreen
+let g:WhichKeyDesc_toggle_distraction_free_mode = '<leader>tz Distraction Free Mode'
+" Fullscreen
 map <Leader>tF <Action>(ToggleFullScreen)
+let g:WhichKeyDesc_toggle_fullscreen = '<leader>tF Fullscreen'
 
 
 "
 " +search
 
+let g:WhichKeyDesc_search_leader = '<leader>s +search'
 " Search project
 map <Leader>sp <Action>(FindInPath)
+let g:WhichKeyDesc_search_project2 = '<leader>sp Search project'
 
 
 "
@@ -252,6 +341,7 @@ noremap <Leader>ww <C-w>w
 noremap <Leader>wW <C-w>W
 " Maximize window
 noremap <Leader>wm <Action>(Unsplit)
+let g:WhichKeyDesc_window_leader = '<leader>w +window'
 
 
 "
@@ -265,6 +355,7 @@ set argtextobj
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_startofline = 0
 set easymotion
+unmap <Leader><Space>
 map gsb <Plug>(easymotion-bl)
 map gse <Plug>(easymotion-el)
 map gsf <Plug>(easymotion-f)
@@ -306,3 +397,9 @@ let g:NERDTreeMapMenu = '<Nop>'
 " let g:NERDTreeMapQuit = 'q'
 let g:NERDTreeMapToggleZoom = '<Nop>'
 set NERDTree
+
+" vim-which-key
+let g:WhichKey_DefaultDelay = 1000
+let g:WhichKey_ShowVimActions = 'true'
+set notimeout
+set which-key

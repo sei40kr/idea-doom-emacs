@@ -34,19 +34,19 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +code
 
-| Key binding | Description                                  |
-|:------------|:---------------------------------------------|
-| `SPC c D`   | Jump to references                           |
-| `SPC c a`   | Execute code action (Show Intention Actions) |
-| `SPC c c`   | Compile                                      |
-| `SPC c d`   | Jump to definition                           |
-| `SPC c f`   | Format buffer/region                         |
-| `SPC c i`   | Find implementations                         |
-| `SPC c k`   | Jump to documentation                        |
-| `SPC c o`   | Organize imports                             |
-| `SPC c r`   | Rename                                       |
-| `SPC c t`   | Find type definition                         |
-| `SPC c C`   | Recompile                                    |
+| Key binding | Description              |
+|:------------|:-------------------------|
+| `SPC c D`   | Jump to references       |
+| `SPC c a`   | Execute Intention Action |
+| `SPC c c`   | Compile                  |
+| `SPC c d`   | Jump to definition       |
+| `SPC c f`   | Format buffer/region     |
+| `SPC c i`   | Find implementations     |
+| `SPC c k`   | Show documentation       |
+| `SPC c o`   | Organize imports         |
+| `SPC c r`   | Rename                   |
+| `SPC c t`   | Find type definition     |
+| `SPC c C`   | Recompile                |
 
 ### +file
 
@@ -91,18 +91,18 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +insert
 
-| Key binding                            | Description                    |
-|:---------------------------------------|:-------------------------------|
-| `SPC i e` (`M-SPC i e` in insert mode) | Insert emoji (or unicode)      |
-| `SPC i s` (`M-SPC i s` in insert mode) | Insert snippet (Live Template) |
-| `SPC i u` (`M-SPC i u` in insert mode) | Insert unicode (or emoji)      |
-| `SPC i y` (`M-SPC i y` in insert mode) | Insert from clipboard          |
+| Key binding                            | Description           |
+|:---------------------------------------|:----------------------|
+| `SPC i e` (`M-SPC i e` in insert mode) | Insert emoji/unicode  |
+| `SPC i s` (`M-SPC i s` in insert mode) | Insert Live Template  |
+| `SPC i u` (`M-SPC i u` in insert mode) | Insert emoji/unicode  |
+| `SPC i y` (`M-SPC i y` in insert mode) | Insert from clipboard |
 
 ### +open
 
 | Key binding | Description               |
 | :---------- | :------------------------ |
-| `SPC o p`   | Project View              |
+| `SPC o p`   | Toggle Project View       |
 | `SPC o P`   | Find file in Project View |
 
 ### +project
@@ -113,19 +113,19 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC p i`   | Invalidate project cache |
 | `SPC p p`   | Switch projects          |
 | `SPC p R`   | Run project              |
-| `SPC p t`   | List project todos       |
+| `SPC p t`   | Show TODO                |
 | `SPC p z`   | List project tasks       |
 
 ### +toggle
 
-| Key binding | Description                      |
-|:------------|:---------------------------------|
-| `SPC t b`   | Big mode (Presentation Mode)     |
-| `SPC t F`   | Frame fullscreen                 |
-| `SPC t l`   | Line numbers                     |
-| `SPC t r`   | Read-only mode                   |
-| `SPC t w`   | Soft line wrapping               |
-| `SPC t z`   | Zen mode (Distraction Free Mode) |
+| Key binding | Description           |
+|:------------|:----------------------|
+| `SPC t b`   | Presentation Mode     |
+| `SPC t F`   | Fullscreen            |
+| `SPC t l`   | Line numbers          |
+| `SPC t r`   | Read-only mode        |
+| `SPC t w`   | Soft line wrapping    |
+| `SPC t z`   | Distraction Free Mode |
 
 ### +search
 

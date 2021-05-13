@@ -89,6 +89,12 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC g o o` | Browse file or region |
 | `SPC g o p` | Browse a pull request |
 
+### +help
+
+| Key binding | Description  |
+|:------------|:-------------|
+| `SPC h t`   | Change theme |
+
 ### +insert
 
 | Key binding                            | Description           |

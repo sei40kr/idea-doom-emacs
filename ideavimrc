@@ -18,6 +18,61 @@ set ideajoin=true
 set idearefactormode=visual
 set ideavimsupport=
 
+
+" evil-escape
+imap jk <Esc>
+
+" Insert newline above
+nnoremap [<Space> O<Esc>j
+vnoremap [<Space> <Esc>O<Esc>j
+let g:WhichKeyDesc_insert_newline_above = '[<Space> Insert newline above'
+" Insert newline below
+nnoremap ]<Space> o<Esc>k
+vnoremap ]<Space> <Esc>o<Esc>k
+let g:WhichKeyDesc_insert_newline_below = ']<Space> Insert newline below'
+
+" Close all folds
+nmap zm <Action>(CollapseAllRegions)
+" Open all folds
+nmap zr <Action>(ExpandAllRegions)
+
+" doom-escape-hook
+nnoremap <Esc> :<C-u>nohl<CR>:<C-u>action HideAllWindows<CR><Esc>
+
+
+"
+" Hybrid mode
+
+" Go to first character
+inoremap <C-a> <Esc>I
+cnoremap <C-a> <Home>
+" Go left
+inoremap <C-b> <Left>
+" Delete character
+inoremap <C-d> <Del>
+" Go to end of line
+inoremap <C-e> <Esc>A
+cnoremap <C-e> <End>
+" Go right
+inoremap <C-f> <Right>
+" Unbind C-g
+noremap <C-g> <Esc>
+inoremap <C-g> <Nop>
+" Delete to line end
+inoremap <C-k> <Esc>:action EditorDeleteToLineEnd<CR>a
+" Go down
+inoremap <C-n> <Down>
+" Go up
+inoremap <C-p> <Up>
+" Go to previous word
+inoremap <A-b> <Esc>:action EditorPreviousWord<CR>i
+" Go to next word
+inoremap <A-f> <Esc>:action EditorNextWord<CR>a
+
+
+"
+" +leader
+
 " Search project
 map <Leader>/ <Action>(FindInPath)
 let g:WhichKeyDesc_search_project1 = '<leader>/ Search project'
@@ -36,25 +91,6 @@ let g:WhichKeyDesc_switch_to_last_buffer = '<leader>` Switch to last buffer'
 " Toggle last popup
 map <Leader>~ <Action>(JumpToLastWindow)
 let g:WhichKeyDesc_toggle_last_popup = '<leader>~ Toggle last popup'
-
-" doom-escape-hook
-nnoremap <Esc> :<C-u>nohl<CR>:<C-u>action HideAllWindows<CR><Esc>
-" evil-escape
-imap jk <Esc>
-
-" Close all folds
-nmap zm <Action>(CollapseAllRegions)
-" Open all folds
-nmap zr <Action>(ExpandAllRegions)
-
-" Insert newline above
-nnoremap [<Space> O<Esc>j
-vnoremap [<Space> <Esc>O<Esc>j
-let g:WhichKeyDesc_insert_newline_above = '[<Space> Insert newline above'
-" Insert newline below
-nnoremap ]<Space> o<Esc>k
-vnoremap ]<Space> <Esc>o<Esc>k
-let g:WhichKeyDesc_insert_newline_below = ']<Space> Insert newline below'
 
 
 "

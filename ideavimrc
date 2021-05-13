@@ -323,13 +323,29 @@ let g:WhichKeyDesc_insert_from_clipboard = '<leader>iy Insert from clipboard'
 
 "
 " +open
+
 let g:WhichKeyDesc_open_leader = '<leader>o +open'
+" New window
+nmap <Leader>of <Action>(EditSourceInNewWindow)
+let g:WhichKeyDesc_new_window = '<leader>of New window'
+" Select window
+nmap <Leader>oF <Action>(OpenProjectWindows)
+let g:WhichKeyDesc_select_window = '<leader>oF Select window'
 " Toggle Project View
 noremap <Leader>op :<C-u>NERDTreeToggle<CR>
 let g:WhichKeyDesc_project_sidebar = '<leader>op Toggle Project View'
 " Find file in Project View
 noremap <Leader>oP :<C-u>NERDTreeFind<CR>
 let g:WhichKeyDesc_find_file_in_project_sidebar = '<leader>oP Find file in Project View'
+" Reveal in filer
+nmap <Leader>oo <Action>(RevealIn)
+let g:WhichKeyDesc_reveal_in_filer = '<leader>oo Reveal in filer'
+" Open terminal
+nmap <Leader>ot <Action>(ActivateTerminalToolWindow)
+let g:WhichKeyDesc_open_terminal = '<leader>ot Open terminal'
+" Open terminal here
+nmap <Leader>oT <Action>(Terminal.OpenInTerminal)
+let g:WhichKeyDesc_open_terminal_here = '<leader>oT Open terminal here'
 
 
 "

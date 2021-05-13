@@ -117,8 +117,13 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 | Key binding | Description               |
 | :---------- | :------------------------ |
+| `SPC o f`   | New window                |
+| `SPC o F`   | Select window             |
+| `SPC o o`   | Reveal in filer           |
 | `SPC o p`   | Toggle Project View       |
 | `SPC o P`   | Find file in Project View |
+| `SPC o t`   | Open terminal             |
+| `SPC o T`   | Open terminal here        |
 
 ### +project
 

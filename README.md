@@ -2,6 +2,8 @@
 
 Doom Emacs key bindings in IdeaVim.
 
+![Screenshot](https://raw.githubusercontent.com/sei40kr/idea-doom-emacs/master/screenshot.png)
+
 ## Prequisites
 
 - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)

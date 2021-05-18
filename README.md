@@ -36,19 +36,20 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +code
 
-| Key binding | Description              |
-|:------------|:-------------------------|
-| `SPC c D`   | Jump to references       |
-| `SPC c a`   | Execute Intention Action |
-| `SPC c c`   | Compile                  |
-| `SPC c d`   | Jump to definition       |
-| `SPC c f`   | Format buffer/region     |
-| `SPC c i`   | Find implementations     |
-| `SPC c k`   | Show documentation       |
-| `SPC c o`   | Organize imports         |
-| `SPC c r`   | Rename                   |
-| `SPC c t`   | Find type definition     |
-| `SPC c C`   | Recompile                |
+| Key binding | Description                         |
+|:------------|:------------------------------------|
+| `SPC c D`   | Jump to references                  |
+| `SPC c a`   | Execute Intention Action            |
+| `SPC c c`   | Compile                             |
+| `SPC c d`   | Jump to definition                  |
+| `SPC c f`   | Format buffer/region                |
+| `SPC c i`   | Find implementations                |
+| `SPC c j`   | Jump to symbol in current workspace |
+| `SPC c k`   | Show documentation                  |
+| `SPC c o`   | Organize imports                    |
+| `SPC c r`   | Rename                              |
+| `SPC c t`   | Find type definition                |
+| `SPC c C`   | Recompile                           |
 
 ### +file
 

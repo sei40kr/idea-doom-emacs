@@ -424,6 +424,7 @@ noremap <Leader>ws <C-w>s
 noremap <Leader>wv <C-w>v
 noremap <Leader>ww <C-w>w
 noremap <Leader>wW <C-w>W
+noremap <Leader>wq <C-w>c
 " Maximize window
 noremap <Leader>wm <Action>(Unsplit)
 let g:WhichKeyDesc_window_leader = '<leader>w +window'

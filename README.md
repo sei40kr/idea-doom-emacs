@@ -150,6 +150,7 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC t r`   | Read-only mode        |
 | `SPC t w`   | Soft line wrapping    |
 | `SPC t z`   | Distraction Free Mode |
+| `SPC t Z`   | Zen Mode              |
 
 ### +search
 

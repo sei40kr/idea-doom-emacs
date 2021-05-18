@@ -394,6 +394,9 @@ let g:WhichKeyDesc_toggle_soft_line_wrapping = '<leader>tw Soft line wrapping'
 " Distraction Free Mode
 map <Leader>tz <Action>(ToggleDistractionFreeMode)
 let g:WhichKeyDesc_toggle_distraction_free_mode = '<leader>tz Distraction Free Mode'
+" Zen Mode
+map <Leader>tZ <Action>(ToggleZenMode)
+let g:WhichKeyDesc_toggle_zen_mode = '<leader>tZ Zen Mode'
 " Fullscreen
 map <Leader>tF <Action>(ToggleFullScreen)
 let g:WhichKeyDesc_toggle_fullscreen = '<leader>tF Fullscreen'

@@ -294,6 +294,9 @@ let g:WhichKeyDesc_help_leader = '<leader>h +help'
 " Show Event Log
 map <Leader>he <Action>(ActivateEventLogToolWindow)
 let g:WhichKeyDesc_event_log = '<leader>he Show Event Log'
+" Reload IdeaVim config
+map <Leader>hr <Action>(IdeaVim.ReloadVimRc.reload)
+let g:WhichKeyDesc_reload_ideavim_config = '<leader>hr Reload IdeaVim config'
 " Change theme
 map <Leader>ht <Action>(ChangeLaf)
 let g:WhichKeyDesc_change_theme = '<leader>ht Change theme'

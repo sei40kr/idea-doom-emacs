@@ -102,9 +102,10 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +help
 
-| Key binding | Description  |
-|:------------|:-------------|
-| `SPC h t`   | Change theme |
+| Key binding | Description           |
+|:------------|:----------------------|
+| `SPC h r`   | Reload IdeaVim config |
+| `SPC h t`   | Change theme          |
 
 ### +insert
 

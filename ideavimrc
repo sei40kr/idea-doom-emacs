@@ -18,6 +18,12 @@ set ideajoin=true
 set idearefactormode=visual
 set ideavimsupport=
 
+" Move lines arround
+map <A-Down> :action MoveLineDown<cr>
+map <A-Up> :action MoveLineUp<cr>
+
+" Open Action Menu
+map <A-x> :action GotoAction
 
 " evil-escape
 imap jk <Esc>

@@ -228,6 +228,9 @@ You need to source `expand-region.vim` to enable these key bindings:
 | `SPC <`     | Switch buffer (Switcher)             |
 | `SPC [`     | Insert blank line above current line |
 | `SPC ]`     | Insert blank line below current line |
+| `ALT x`     | Opens Action Menu                    |
+| `ALT UP`    | Move Code Block/Line up              |
+| `ALT DOWN`  | Move Code Block/Line down            |
 
 ## Tips
 

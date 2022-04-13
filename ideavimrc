@@ -83,7 +83,7 @@ inoremap <A-f> <Esc>:action EditorNextWord<CR>a
 map <Leader>/ <Action>(FindInPath)
 let g:WhichKeyDesc_search_project1 = '<leader>/ Search project'
 " Find file
-map <Leader>. <Action>(SearchEverywhere)
+map <Leader>. <Action>(GotoFile)
 let g:WhichKeyDesc_find_file1 = '<leader>. Find file'
 " Jump to bookmark
 map <Leader><CR> <Action>(Bookmarks)

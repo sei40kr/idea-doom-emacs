@@ -4,6 +4,11 @@ Doom Emacs key bindings in IdeaVim.
 
 ![Screenshot](https://raw.githubusercontent.com/sei40kr/idea-doom-emacs/master/screenshot.png)
 
+## Breaking Changes
+
+- Renamed `ideavimrc` -> `init.vim`, so you need to import `init.vim` into your
+  `.ideavimrc`.
+
 ## Prequisites
 
 - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
@@ -14,7 +19,7 @@ Doom Emacs key bindings in IdeaVim.
 ## Install
 
 ```vim
-source /path/to/idea-doom-emacs/ideavimrc
+source /path/to/idea-doom-emacs/init.vim
 " If you want expand-region (Extend/Shrink Selection) key bindings
 source /path/to/idea-doom-emacs/expand-region.vim
 " If you want camel case movement and editing

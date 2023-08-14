@@ -12,6 +12,7 @@ Doom Emacs key bindings in IdeaVim.
 ## Prequisites
 
 - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
+- [Dash](https://plugins.jetbrains.com/plugin/7351-dash)
 - [IdeaVim-EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
 - [Find Pull Request](https://plugins.jetbrains.com/plugin/8262-find-pull-request)
 - [Which-key](https://plugins.jetbrains.com/plugin/15976-which-key)
@@ -160,9 +161,10 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +search
 
-| Key binding        | Description    |
-|:-------------------|:---------------|
-| `SPC /`, `SPC s p` | Search project |
+| Key binding        | Description             |
+|:-------------------|:------------------------|
+| `SPC /`, `SPC s p` | Search project          |
+| `SPC s k`          | Look up in Dash docsets |
 
 ### +window
 

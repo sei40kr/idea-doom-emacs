@@ -409,6 +409,9 @@ let g:WhichKeyDesc_search_leader = '<leader>s +search'
 " Search project
 map <Leader>sp <Action>(FindInPath)
 let g:WhichKeyDesc_search_project2 = '<leader>sp Search project'
+" Look up in Dash docsets
+map <Leader>sk <Action>(SmartSearchAction)
+let g:WhichKeyDesc_look_up_in_docsets = '<leader>sk Look up in Dash docsets'
 
 
 "

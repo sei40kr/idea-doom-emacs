@@ -240,11 +240,13 @@ You need to source `expand-region.vim` to enable these key bindings:
 
 ### Reformat Code on Save
 
-Add the following into your `.ideavimrc`:
+Actions on Save feature is available since IntelliJ IDEA 2021.2.
 
-```vim
-nnoremap <Leader>fs :<C-u>action ReformatCode<CR>:<C-u>w<CR>
-```
+Go `Settings > Tools > Actions on Save` and check `Reformat code`
+(also check `Optimize imports`, `Rearrange code` if you want).
+
+If it doesn't work, make sure you don't set `ideawrite` option to `file`.
+It should be `all`.
 
 ### Retain Region on Indent
 

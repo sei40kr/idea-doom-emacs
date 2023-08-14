@@ -8,6 +8,8 @@ Doom Emacs key bindings in IdeaVim.
 
 - Renamed `ideavimrc` -> `init.vim`, so you need to import `init.vim` into your
   `.ideavimrc`.
+- `expand-region.vim` was removed. To configure expand/shrink region key
+  bindings, see `Tips > Expand/Shrink Region` section below.
 
 ## Prequisites
 
@@ -21,8 +23,6 @@ Doom Emacs key bindings in IdeaVim.
 
 ```vim
 source /path/to/idea-doom-emacs/init.vim
-" If you want expand-region (Extend/Shrink Selection) key bindings
-source /path/to/idea-doom-emacs/expand-region.vim
 " If you want camel case movement and editing
 source /path/to/idea-doom-emacs/subword-mode.vim
 ```
@@ -202,15 +202,6 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC g s w`   | `<Plug>(easymotion-wl)`  |
 | `SPC g s g e` | `<Plug>(easymotion-gel)` |
 
-### expand-region
-
-You need to source `expand-region.vim` to enable these key bindings:
-
-| Key binding | Description                                       |
-|:------------|:--------------------------------------------------|
-| `C-+`       | Increase selected region by semantic units        |
-| `C-=`       | Contract the selected region to its previous size |
-
 ### In Project View
 
 | Key binding | Description        |
@@ -255,6 +246,29 @@ Add the following into your `init.vim`:
 ```vim
 vnoremap < <gv
 vnoremap > >gv
+```
+
+### Expand/Shrink Region
+
+#### Spacemacs Style (Recommended)
+
+Add the following into your `init.vim`:
+
+```vim
+map <Leader>v <Action>(EditorSelectWord)
+let g:WhichKeyDesc_expand_region = '<Leader>v Expand region'
+vmap v <Action>(EditorSelectWord)
+vmap V <Action>(EditorUnSelectWord)
+```
+
+#### Doom Emacs Style
+
+Add the following into your `init.vim`:
+
+```vim
+map <C-S-=> <Action>(EditorSelectWord)
+vmap <C-S-=> <Action>(EditorSelectWord)
+vmap <C-=> <Action>(EditorUnSelectWord)
 ```
 
 ## Similar Projects

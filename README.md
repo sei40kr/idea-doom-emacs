@@ -244,6 +244,15 @@ Add the following into your `.ideavimrc`:
 nnoremap <Leader>fs :<C-u>action ReformatCode<CR>:<C-u>w<CR>
 ```
 
+### Retain Region on Indent
+
+Add the following into your `init.vim`:
+
+```vim
+vnoremap < <gv
+vnoremap > >gv
+```
+
 ## Similar Projects
 
 - [intellimacs](https://github.com/MarcoIeni/intellimacs) - Spacemacs' like key bindings for IntelliJ platform

@@ -224,8 +224,8 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 |:------------|:-------------------------------------|
 | `SPC RET`   | Jump to bookmark                     |
 | `SPC <`     | Switch buffer (Switcher)             |
-| `SPC [`     | Insert blank line above current line |
-| `SPC ]`     | Insert blank line below current line |
+| `[ SPC`     | Insert blank line above current line |
+| `] SPC`     | Insert blank line below current line |
 
 ## Tips
 

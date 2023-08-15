@@ -186,21 +186,21 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### easymotion
 
-| Key binding   | Description              |
-|:--------------|:-------------------------|
-| `SPC g s b`   | `<Plug>(easymotion-bl)`  |
-| `SPC g s e`   | `<Plug>(easymotion-el)`  |
-| `SPC g s f`   | `<Plug>(easymotion-f)`   |
-| `SPC g s F`   | `<Plug>(easymotion-F)`   |
-| `SPC g s j`   | `<Plug>(easymotion-j)`   |
-| `SPC g s k`   | `<Plug>(easymotion-k)`   |
-| `SPC g s n`   | `<Plug>(easymotion-n)`   |
-| `SPC g s N`   | `<Plug>(easymotion-N)`   |
-| `SPC g s s`   | `<Plug>(easymotion-s2)`  |
-| `SPC g s t`   | `<Plug>(easymotion-t)`   |
-| `SPC g s T`   | `<Plug>(easymotion-T)`   |
-| `SPC g s w`   | `<Plug>(easymotion-wl)`  |
-| `SPC g s g e` | `<Plug>(easymotion-gel)` |
+| Key binding | Description              |
+|:------------|:-------------------------|
+| `g s b`     | `<Plug>(easymotion-bl)`  |
+| `g s e`     | `<Plug>(easymotion-el)`  |
+| `g s f`     | `<Plug>(easymotion-f)`   |
+| `g s F`     | `<Plug>(easymotion-F)`   |
+| `g s j`     | `<Plug>(easymotion-j)`   |
+| `g s k`     | `<Plug>(easymotion-k)`   |
+| `g s n`     | `<Plug>(easymotion-n)`   |
+| `g s N`     | `<Plug>(easymotion-N)`   |
+| `g s s`     | `<Plug>(easymotion-s2)`  |
+| `g s t`     | `<Plug>(easymotion-t)`   |
+| `g s T`     | `<Plug>(easymotion-T)`   |
+| `g s w`     | `<Plug>(easymotion-wl)`  |
+| `g s g e`   | `<Plug>(easymotion-gel)` |
 
 ### In Project View
 

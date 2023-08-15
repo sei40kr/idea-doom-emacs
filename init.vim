@@ -83,7 +83,7 @@ let g:WhichKeyDesc_find_file1 = '<leader>. Find file'
 map <Leader><CR> <Action>(Bookmarks)
 let g:WhichKeyDesc_jump_to_bookmark = '<leader>⏎ Jump to bookmark'
 " Switch buffer
-map <Leader>\< <Action>(Switcher)
+map <Leader>< <Action>(Switcher)
 let g:WhichKeyDesc_switch_buffer = '<leader>< Switch buffer'
 " Switch to last buffer
 map <Leader>` <Action>(GoToLastTab)

@@ -165,8 +165,6 @@ let g:WhichKeyDesc_find_type_def = '<leader>ct Find type definition'
 map <Leader>cC <Action>(Compile)
 let g:WhichKeyDesc_recompile = '<leader>cC Recompile'
 
-" Show error description
-map <C-c>!h <Action>(ShowErrorDescription)
 " Go to previous error
 nmap [d <Action>(GotoPreviousError)
 let g:WhichKeyDesc_go_to_prev_error1 = '[d Go to previous error'
@@ -416,6 +414,12 @@ let g:WhichKeyDesc_look_up_in_docsets = '<leader>sk Look up in Dash docsets'
 
 "
 " +window
+
+" Show error description
+nmap <C-w>d <Action>(ShowErrorDescription)
+let g:WhichKeyDesc_show_error_description1 = '<C-w>d Show error description'
+nmap <C-w><C-d> <Action>(ShowErrorDescription)
+let g:WhichKeyDesc_show_error_description2 = '<C-w><C-d> Show error description'
 
 noremap <Leader>wc <C-w>c
 noremap <Leader>wd <C-w>c

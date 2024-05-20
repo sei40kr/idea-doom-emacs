@@ -180,9 +180,10 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC w w`            | `C-w w`     |
 | `SPC w W`            | `C-w W`     |
 
-| Key binding | Description               |
-|:------------|:--------------------------|
-| `SPC w m`   | Maximize window (unsplit) |
+| Key binding              | Description               |
+| :----------------------- | :------------------------ |
+| `<C-w> d`, `<C-w> <C-d>` | Show error description    |
+| `SPC w m`                | Maximize window (unsplit) |
 
 ### easymotion
 

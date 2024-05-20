@@ -224,13 +224,13 @@ let g:WhichKeyDesc_git_menu = '<leader>g/ Git menu'
 " Jump to previous hunk
 nmap <Leader>g[ <Action>(VcsShowPrevChangeMarker)
 let g:WhichKeyDesc_jump_to_prev_hunk1 = '<leader>g[ Jump to previous hunk'
-nmap [d <Action>(VcsShowPrevChangeMarker)
-let g:WhichKeyDesc_jump_to_prev_hunk2 = '[d Jump to previous hunk'
+nmap [c <Action>(VcsShowPrevChangeMarker)
+let g:WhichKeyDesc_jump_to_prev_hunk2 = '[c Jump to previous hunk'
 " Jump to next hunk
 nmap <Leader>g] <Action>(VcsShowNextChangeMarker)
 let g:WhichKeyDesc_jump_to_next_hunk1 = '<leader>g] Jump to next hunk'
-nmap ]d <Action>(VcsShowNextChangeMarker)
-let g:WhichKeyDesc_jump_to_next_hunk2 = ']d Jump to next hunk'
+nmap ]c <Action>(VcsShowNextChangeMarker)
+let g:WhichKeyDesc_jump_to_next_hunk2 = ']c Jump to next hunk'
 " Switch branch
 map <Leader>gb <Action>(Git.Branches)
 let g:WhichKeyDesc_switch_branch = '<leader>gb Switch branch'

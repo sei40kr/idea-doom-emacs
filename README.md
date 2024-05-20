@@ -74,8 +74,8 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC g '`        | GitHub menu           |
 | `SPC g .`        | Git file actions      |
 | `SPC g /`        | Git menu              |
-| `SPC g [`, `[ d` | Jump to previous hunk |
-| `SPC g ]`, `] d` | Jump to next hunk     |
+| `SPC g [`, `[ c` | Jump to previous hunk |
+| `SPC g ]`, `] c` | Jump to next hunk     |
 | `SPC g b`        | Switch branch         |
 | `SPC g r`        | Revert hunk           |
 | `SPC g s`        | Status                |

@@ -168,12 +168,12 @@ let g:WhichKeyDesc_recompile = '<leader>cC Recompile'
 " Show error description
 map <C-c>!h <Action>(ShowErrorDescription)
 " Go to previous error
-nmap [e <Action>(GotoPreviousError)
-let g:WhichKeyDesc_go_to_prev_error1 = '[e Go to previous error'
+nmap [d <Action>(GotoPreviousError)
+let g:WhichKeyDesc_go_to_prev_error1 = '[d Go to previous error'
 nmap <C-c>!p <Action>(GotoPreviousError)
 " Go to next error
-nmap ]e <Action>(GotoNextError)
-let g:WhichKeyDesc_go_to_next_error1 = ']e Go to next error'
+nmap ]d <Action>(GotoNextError)
+let g:WhichKeyDesc_go_to_next_error1 = ']d Go to next error'
 nmap <C-c>!n <Action>(GotoNextError)
 
 " Go to previous method
